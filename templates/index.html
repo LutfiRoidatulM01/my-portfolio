@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>My Portofolio</title>
+</head>
+
+<body>
+    <section id="home">
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Port<span>folio</span></h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h4>Hello! Im</h4>
+                <h1>Lutfi <span>Roidatul</span> Munawaroh</h1>
+                <h4>Mahasiswa</h4>
+                <h3>Universitas Teknologi Digital Indonesia</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="abt">
+        <div class="about">
+            <div class="main">
+                <img src="{{ url_for('static', filename='img/profil.jpg')}}" alt="">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Mahasiswa <span>Informatika</span></h5>
+                    <p>Saya adalah seorang mahasiswa di salah satu Perguruan Tinggi Swasta Di Yogyakarta.
+                        Saya adalah mahasiswa Informatika yang sangat bersemangat tentang pengembangan web.
+                        Dengan latar belakang SMK jurusan Rekayasa Perangkat Lunak (RPL), saya memiliki dasar yang kuat
+                        dalam pemrograman dan pengembangan perangkat lunak.
+                        Saya berusaha untuk terus memperdalam pengetahuan dan keterampilan saya dalam dunia web
+                        development.
+                    </p>
+                    <button type="button">Let's Talk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="service">
+        <div class="title">
+            <h2>Hard Skil</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-brands fa-figma"></i>
+                <h5>UI/UX</h5>
+                <div class="pra">
+                    <p style="text-align: center;"></p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p style="text-align: center;"></p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-camera"></i>
+                <h5>Photograpy</h5>
+                <div class="pra">
+                    <p style="text-align: center;"></p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <div class="porto">
+            <div class="title">
+                <h2>Portofolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card-2">
+                        <img src="{{ url_for('static', filename='img/porto1.png')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Aplikasi Pembayaran SPP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card-2">
+                        <img src="{{ url_for('static', filename='img/porto2.png')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Sistem manajemen data Jurusan RPL 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card-2">
+                        <img src="{{ url_for('static', filename='img/porto3.png')}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Web Wisata Daerah
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="contact"></section>
+            <div class="kontak-saya">
+                <p>Lihat Lebih Jauh tentang saya</p>
+                <a href="#" class="button-dua">Hubungi Saya</a>
+            </div>
+
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <p>Untuk lebih mengenal tentang saya hubungi</p>
+                <div class="sosial">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="end">Copyright Lutfi Roidatul Munawaroh</p>
+            </footer>
+
+
+</body>
+
+</html>
